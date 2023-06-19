@@ -3,6 +3,10 @@
 // to help in debugging and getting visibility in your JS code.
 //
 // on Mac (using Chrome), use Option+Command+J to open the console and see this message.
+const add = require('./add');
+const multiply = require('./multiply');
+
+console.log(multiply(add(2, 2), 4));
 
 console.log('Hello from the developer console!');
 
