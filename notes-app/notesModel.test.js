@@ -16,4 +16,14 @@ describe(',/NotesModel', () => {
     expect(notes).toEqual(['Buy milk', 'Go to the gym']);
   });
 
+  it('should reset the notes in the NotesModel', () => {
+    const model = new NotesModel();
+  
+    model.addNote('Buy milk');
+    model.addNote('Go to the gym');
+    model.reset();
+  
+    const notes = model.getNotes();
+    expect(notes).toEqual([]);
+  });
 });
