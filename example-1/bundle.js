@@ -27,7 +27,7 @@
   // index.js
   var add = require_add();
   var multiply = require_multiply();
-  console.log(multiply(add(2, 2), 4));
+  console.log(multiply(add(5, 5), 4));
   console.log("Hello from the developer console!");
   console.log(new Date());
 })();
